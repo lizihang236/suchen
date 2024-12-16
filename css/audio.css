@@ -408,4 +408,140 @@ body {
     cursor: pointer;
     border: 4px solid #33333300;
     box-shadow: -407px 0 0 400px #42b680;
+    @media screen and (max-width: 600px) {
+    /* 整体页面布局调整 */
+    html,
+    body {
+        height: auto; /* 让高度自适应内容，不再固定为100% */
+    }
+
+   .upper-container {
+        width: 100%;
+        padding-left: 0;
+        height: auto; /* 高度自适应，避免内容溢出 */
+    }
+
+    /* 唱片部分样式调整 */
+   .record-container,
+   .introduction-container {
+        width: 100%;
+        float: none; /* 去除浮动，改为上下排列布局 */
+        height: auto;
+    }
+
+   .record-bg {
+        width: 200px; /* 缩小唱片背景尺寸，适应手机屏幕 */
+        height: 200px;
+        border-radius: 200px;
+    }
+
+    #record-img {
+        width: 100px; /* 相应缩小唱片图片尺寸 */
+        height: 100px;
+        border-radius: 100px;
+    }
+
+   .record-center {
+        width: 10px; /* 缩小唱片中心小圆尺寸 */
+        height: 10px;
+        border-radius: 10px;
+    }
+
+    /* 音乐介绍部分样式优化 */
+   .text-container {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #music-title {
+        font-size: 2rem; /* 缩小音乐标题字体大小 */
+        line-height: 3rem;
+    }
+
+   .author-container {
+        font-size: small; /* 缩小作者相关字体大小 */
+    }
+
+    /* 音频播放器部分样式调整 */
+   .audio-box {
+        height: auto; /* 高度自适应，避免内容挤压 */
+    }
+
+   .audio-container {
+        width: 100%;
+    }
+
+   .a-progress {
+        margin-bottom: 5px; /* 减小进度条外边距 */
+    }
+
+    /* 控制按钮部分样式修改 */
+   .center-button-container {
+        width: 100%; /* 占满一行宽度 */
+        display: flex;
+        justify-content: space-around; /* 均匀分布按钮 */
+    }
+
+   .center-icon {
+        width: 20px; /* 缩小中间图标尺寸 */
+        height: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+   .icon-play,
+   .icon-pause {
+        width: 30px; /* 调整播放、暂停按钮尺寸 */
+        height: 30px;
+    }
+
+   .s-left,
+   .s-right {
+        width: 20px; /* 缩小上一首、下一首图标尺寸 */
+        height: 20px;
+    }
+
+   .volume {
+        width: 20px; /* 缩小音量图标尺寸 */
+        height: 20px;
+    }
+
+   .bottom-button-container {
+        width: 100%; /* 占满一行宽度 */
+        padding-top: 5px;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end; /* 靠右对齐尾部按钮 */
+    }
+
+   .bottom-icon {
+        width: 15px; /* 缩小尾部图标尺寸 */
+        height: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+   .speed {
+        font-size: small; /* 缩小速度文本字体大小 */
+    }
+
+    /* 音乐列表部分样式调整 */
+   .close-list,
+   .music-list {
+        width: 100%; /* 占满屏幕宽度，竖屏显示 */
+    }
+
+   .music-list-title {
+        font-size: 1.5rem; /* 缩小音乐列表标题字体大小 */
+    }
+
+   .line {
+        width: 90%; /* 适当调整分割线宽度 */
+    }
+
+   .all-list div {
+        height: 40px; /* 调整列表项高度 */
+        line-height: 40px;
+    }
+}
 }
